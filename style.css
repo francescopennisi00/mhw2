@@ -1,0 +1,82 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+.choice-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.choice-grid div {
+    width: 32.5%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+.question-name {
+    margin: 10px 0px;
+}
+
+@media (max-width: 700px) {
+    article {
+        width: 95%;
+      }
+
+      header div span {
+          display: none;
+      }
+}
+
+@media (max-width: 500px) {
+    .choice-grid div {
+        width: 49%;
+    }
+}
+
+.selected {
+    background-color: #cfe3ff;
+}
+
+.notSelected {
+    opacity: 0.6;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    margin-top: 30px;  /*poichè 10px si ereditano dal margine inferiore dell'ultima sezione della griglia delle risposte finale*/
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+button {
+    display: block;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    background-color: #cecece;
+}
+
+button:hover {
+    color: #e0e0e0;
+}
+
+.question-name {
+    background-image: url("./images/sfondo_milan.jpg");
+    background-size: cover;
+}
+
+
+
